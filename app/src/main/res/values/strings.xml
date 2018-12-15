@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Event Manager</string>
+    <string name="welcome_to_my_prototype">welcome to my prototype</string>
+    <string name="sign_in">Sign In</string>
+    <string name="log_in">Log In</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_log_me_in">LogMeIN</string>
+    <string name="password">Password:</string>
+    <string name="proceed">Proceed</string>
+    <string name="e_mail">E-mail:</string>
+    <string name="title_activity_sign_in">SignIn</string>
+    <string name="name">Name:</string>
+    <string name="write_your_email">Write your e-mail</string>
+    <string name="password_please">Password please</string>
+    <string name="email">email</string>
+    <string name="title_activity_main_page">MainPage</string>
+    <string name="title_activity_venue">Venue</string>
+    <string name="title_activity_entertainer">Entertainer</string>
+    <string name="surname">Surname:</string>
+    <string name="verificate_password">Verificate Password</string>
+    <string name="phone_number">Phone Number:</string>
+    <string name="Proceed">Proceed</string>
+    <string name="welcome_to_app_s_prototype">Welcome To App\'s Prototype</string>
+    <string name="add_entertainer_advert">Add Entertainer Advert</string>
+    <string name="add_venue">Add Venue</string>
+    <string name="enter_keywords_here">Enter keywords here</string>
+    <string name="title_activity_results">Results</string>
+    <string name="the_advertising_user_s_name_will_come_here_didn_t_code_the_listeners_for_it_yet">The advertising user\'s name will come here, didn\'t code the listeners for it yet</string>
+    <string name="you_can_write_your_advertisement_here">You can write your advertisement here</string>
+    <string name="user_s_phone_will_be_set_here">user\'s phone will be set here</string>
+    <string name="post">Post</string>
+    <string name="user_s_email_will_be_set_here">user\'s email will be set here</string>
+    <string name="venue_name">Venue Name</string>
+    <string name="venue_description">Venue Description</string>
+    <string name="set_as_advertiser_s_mail">Set as advertiser\'s mail</string>
+    <string name="enter_venue_s_phone_number">Enter Venue\'s Phone Number</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="title_activity_sign_up" />
+
+</resources>
+

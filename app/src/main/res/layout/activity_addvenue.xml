@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/addvenue_image"
+    tools:context=".Activityaddvenue"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <EditText
+        android:id="@+id/namee"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Mekan adı"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorwhite"
+        android:textColorHint="@color/colorwhite"
+        app:layout_constraintBottom_toTopOf="@+id/detailss"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/detailss"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:hint="Detaylar"
+        android:inputType="textPersonName"
+        android:singleLine="false"
+        android:textColor="@color/colorwhite"
+        android:textColorHint="@color/colorwhite"
+        app:layout_constraintBottom_toTopOf="@+id/addresss"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namee" />
+
+    <EditText
+        android:id="@+id/addresss"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Adres"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorwhite"
+        android:textColorHint="@color/colorwhite"
+        app:layout_constraintBottom_toTopOf="@+id/phonee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailss" />
+
+    <EditText
+        android:id="@+id/phonee"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="54dp"
+        android:ems="10"
+        android:hint="Telefon numarası"
+        android:inputType="textPersonName|phone"
+        android:textColor="@color/colorwhite"
+        android:textColorHint="@color/colorwhite"
+        app:layout_constraintBottom_toTopOf="@+id/selectimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addresss" />
+
+    <Button
+        android:id="@+id/selectimage"
+        android:layout_width="174dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/buttonselector"
+        android:onClick="butttonOnClick"
+        android:text="Select Image"
+        app:layout_constraintBottom_toTopOf="@+id/imgview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phonee" />
+
+    <ImageView
+        android:id="@+id/imgview"
+        android:layout_width="98dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="11dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/addv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectimage"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_light" />
+
+    <Button
+        android:id="@+id/addv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/buttonselector"
+        android:onClick="butttonOnClick"
+        android:text="Add Venue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/imgview" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="40dp"
+        android:checkedButton="@+id/isvenue"
+        app:layout_constraintEnd_toStartOf="@+id/addv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgview">
+
+        <RadioButton
+            android:id="@+id/isvenue"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Venue"
+            android:textColor="@color/colorwhite"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Advert"
+            android:textColor="@color/colorwhite"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+
+</android.support.constraint.ConstraintLayout>
